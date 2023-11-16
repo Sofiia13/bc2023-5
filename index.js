@@ -100,9 +100,9 @@ app.delete('/notes/:noteName', (req, res) => {
     if (noteIndex !== -1) {
         notes.splice(noteIndex, 1);
         fs.writeFileSync(notes_path, JSON.stringify(notes, null, 2), 'utf8');
-        res.status(200).send('200: Нотатку видалено успішно.');
+        res.status(200).send('Нотатку видалено успішно.');
     } else {
-        res.status(404).send('400: Нотатки з таким іменем не існує.');
+        res.status(404).send('Нотатки з таким іменем не існує.');
     }
 });
 
