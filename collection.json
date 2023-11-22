@@ -34,9 +34,32 @@
 		},
 		{
 			"name": "UploadForm.html",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/UploadForm.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"UploadForm.html"
+					]
+				}
 			},
 			"response": []
 		},
@@ -108,7 +131,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "djioj"
+					"raw": "new"
 				},
 				"url": {
 					"raw": "http://localhost:8000/notes/note1",
